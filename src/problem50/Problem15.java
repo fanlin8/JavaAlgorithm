@@ -9,12 +9,10 @@ import java.util.Scanner;
  */
 public class Problem15 {
 
-    public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please input three numbers: ");
-        int a = input.nextInt();
-        int b = input.nextInt();
-        int c = input.nextInt();
+    public Problem15(){}
+
+    public int[] compare(int a, int b, int c){
+
         int temp;
 
         if (a > b){
@@ -33,7 +31,22 @@ public class Problem15 {
             c = temp;
         }
 
-        System.out.println(a + " < " + b + " < " + c);
+
+        return new int[]{a, b, c};
+
+    }
+
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please input three numbers: ");
+        int a = input.nextInt();
+        int b = input.nextInt();
+        int c = input.nextInt();
+        Problem15 method = new Problem15();
+
+        int[] order = method.compare(a, b , c);
+
+        System.out.println(order[0] + " < " + order[1] + " < " + order[2]);
 
     }
 
