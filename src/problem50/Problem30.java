@@ -37,11 +37,15 @@ public class Problem30 {
         int key = input.nextInt();
 
         int index = binSearch(n, key, 0, n.length-1);
-        for (int i=0; i<=index; i++)
-            m[i] = n[i];
+        //for (int i=0; i<=index; i++)
+        //    m[i] = n[i];
+        //m[index+1] = key;
+       // for (int i=index+1; i<n.length; i++)
+        //    m[i+1] = n[i];
+
+        System.arraycopy(n, 0, m, 0, index+1);
         m[index+1] = key;
-        for (int i=index+1; i<n.length; i++)
-            m[i+1] = n[i];
+        System.arraycopy(n, index+1, m, index+2, n.length-index-1);
 
         for (int num2 : m)
             System.out.print(num2 + " ");
