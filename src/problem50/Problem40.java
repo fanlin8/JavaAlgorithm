@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by Fan on 09/30/2015.
- * ÌâÄ¿£º×Ö·û´®ÅÅĞò¡£
+ * é¢˜ç›®ï¼šå­—ç¬¦ä¸²æ’åºã€‚
  */
 public class Problem40 {
 
