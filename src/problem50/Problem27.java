@@ -9,6 +9,8 @@ import java.util.ArrayList;
 public class Problem27 {
 
     public static void primeFind(ArrayList array, int n){
+        array.add(2);
+        array.add(3);
         for (int i=4; i<=n; i++){
             boolean flag = false;
             for (int j=2; j<=Math.sqrt(i); j++){
@@ -26,8 +28,6 @@ public class Problem27 {
 
     public static void main(String[] args){
         ArrayList array = new ArrayList();
-        array.add(2);
-        array.add(3);
         int n = 100;
 
         primeFind(array, n);
