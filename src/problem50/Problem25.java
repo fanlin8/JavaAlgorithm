@@ -11,10 +11,7 @@ public class Problem25 {
 
     public static boolean numAnl_5(int n){
         char[] array = Integer.toString(n).toCharArray();
-        if (array[0] == array[4] && array[1] == array[3])
-            return true;
-        else
-            return false;
+        return (array[0] == array[4] && array[1] == array[3]);
     }
 
     public static void main(String[] args){

@@ -10,7 +10,7 @@ public class Problem27 {
 
     public Problem27(){}
 
-    public void primeFind(ArrayList array, int n){
+    public void primeFind(ArrayList<Integer> array, int n){
         array.add(2);
         array.add(3);
         for (int i=4; i<=n; i++){
@@ -29,7 +29,7 @@ public class Problem27 {
     }
 
     public static void main(String[] args){
-        ArrayList array = new ArrayList();
+        ArrayList<Integer> array = new ArrayList<>();
         int n = 100;
 
         Problem27 a = new Problem27();

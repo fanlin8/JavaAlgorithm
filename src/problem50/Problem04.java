@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Problem04 {
 
-    public Problem04(){};
+    public Problem04(){}
 
     public void factor(int num){
         for (int i = 2; i <= num; i++){

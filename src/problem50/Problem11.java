@@ -7,7 +7,7 @@ package problem50;
 
 public class Problem11 {
 
-    public Problem11(){};
+    public Problem11(){}
 
     static int count = 0;
 

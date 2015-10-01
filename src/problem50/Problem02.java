@@ -8,8 +8,8 @@ import java.util.ArrayList;
  */
 public class Problem02{
 
-    public static ArrayList primeCheck (int m, int n){
-        ArrayList primes = new ArrayList();
+    public static ArrayList<Integer> primeCheck (int m, int n){
+        ArrayList<Integer> primes = new ArrayList<>();
         for (int i = m; i <= n; i++){
             boolean flag = false;
             for (int j = 2; j <= Math.sqrt(i); j++){
@@ -20,16 +20,16 @@ public class Problem02{
                 else
                     flag = true;
             }
-            if (flag == true) primes.add(i);
+            if (flag) primes.add(i);
         }
         return primes;
     }
 
     public static void main (String[] args){
         int m = 101, n = 200;
-        ArrayList primes = primeCheck(m, n);
+        ArrayList<Integer> primes = primeCheck(m, n);
         System.out.println("There are " + primes.size() + " primes. They are: ");
-        for (int i = 0; i < primes.size(); i++)
-            System.out.println(primes.get(i));
+        for (int i : primes)
+            System.out.println(i);
     }
 }

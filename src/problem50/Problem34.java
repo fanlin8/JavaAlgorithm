@@ -1,6 +1,5 @@
 package problem50;
 
-import problem50.Problem15;
 import java.util.Scanner;
 
 /**

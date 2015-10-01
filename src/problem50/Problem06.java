@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class Problem06 {
 
-    public Problem06(){};
+    public Problem06(){}
 
     public int gcdTest(int a, int b){
         int big = a > b?a:b;

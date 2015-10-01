@@ -17,7 +17,6 @@ public class Problem22 {
 
     public static void main(String[] args){
         int n = 5;
-        long sum = 0;
         Problem22 a = new Problem22();
 
         System.out.println("The Sum is: " + a.fact(n));

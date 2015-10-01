@@ -13,14 +13,14 @@ public class Problem44 {
         System.out.println("Please input an even number which is larger than 2: ");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        ArrayList primes = new ArrayList();
+        ArrayList<Integer> primes = new ArrayList<>();
 
         Problem27 a = new Problem27();
         a.primeFind(primes, n);
 
         for (int i=0; i<primes.size()-1; i++)
             for (int j=i+1; j<primes.size(); j++)
-                if (n == Integer.valueOf(primes.get(i).toString()) + Integer.valueOf(primes.get(j).toString()))
+                if (n == primes.get(i) + primes.get(j))
                     System.out.println(n + " = " + primes.get(i) + " + " + primes.get(j));
 
 

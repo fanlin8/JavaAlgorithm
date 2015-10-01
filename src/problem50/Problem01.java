@@ -20,8 +20,7 @@ public class Problem01 {
 
     public static void main(String[] args){
         System.out.println("Please Input Months: ");
-        Scanner input = null;
-        input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         int month = input.nextInt();
 
         System.out.println("The pairs of rabbits: " + fib(month));

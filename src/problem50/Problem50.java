@@ -28,7 +28,8 @@ public class Problem50 {
                 System.out.println("File exists! ");
             else {
                 System.out.println("File created! ");
-                f.createNewFile();
+                if (!f.createNewFile())
+                    System.out.println("Creating File Failed!");
             }
 
             BufferedWriter out = new BufferedWriter(new FileWriter(f));
