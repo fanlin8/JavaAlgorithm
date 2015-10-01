@@ -2,7 +2,7 @@ package problem50;
 
 /**
  * Created by Fan on 09/29/2015.
- * ÌâÄ¿£ºÊä³ö9*9¿Ú¾÷¡£
+ * é¢˜ç›®ï¼šè¾“å‡º9*9å£è¯€ã€‚
  */
 public class Problem16 {
 
