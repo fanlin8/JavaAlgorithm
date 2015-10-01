@@ -8,7 +8,9 @@ import java.util.ArrayList;
  */
 public class Problem27 {
 
-    public static void primeFind(ArrayList array, int n){
+    public Problem27(){}
+
+    public void primeFind(ArrayList array, int n){
         array.add(2);
         array.add(3);
         for (int i=4; i<=n; i++){
@@ -30,7 +32,8 @@ public class Problem27 {
         ArrayList array = new ArrayList();
         int n = 100;
 
-        primeFind(array, n);
+        Problem27 a = new Problem27();
+        a.primeFind(array, n);
 
         System.out.println("We have total " + array.size() + " primes.");
         System.out.println("They are: ");
