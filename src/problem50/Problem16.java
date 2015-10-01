@@ -2,7 +2,7 @@ package problem50;
 
 /**
  * Created by Fan on 09/29/2015.
- * 题目：输出9*9口诀。
+ * 题目：输出9*9口诀
  */
 public class Problem16 {
 
