@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by Fan on 09/29/2015.
- * 题目：对10个数进行排序
+ * 棰樼洰锛氬10涓暟杩涜鎺掑簭
  */
 public class Problem28 {
 
