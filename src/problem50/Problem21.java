@@ -2,7 +2,7 @@ package problem50;
 
 /**
  * Created by Fan on 09/29/2015.
- * 题目：求1+2!+3!+...+20!的和
+ * 棰樼洰锛氭眰1+2!+3!+...+20!鐨勫拰
  */
 public class Problem21 {
 
