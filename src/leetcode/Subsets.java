@@ -29,19 +29,19 @@ public class Subsets {
 
         Arrays.sort(nums);
 
-        for (int i=0; i<nums.length; i++){
+        for (int i : nums){
             List<List<Integer>> temp = new ArrayList<>();
             for (List<Integer> list : res){
                 list = new ArrayList<>(list);
-                list.add(nums[i]);
-                //System.out.println(list.toString());
+                list.add(i);
+                //System.out.println(list);
                 temp.add(list);
             }
 
             List<Integer> one = new ArrayList<>();
-            one.add(nums[i]);
+            one.add(i);
             temp.add(one);
-            //System.out.println(temp.toString());
+            //System.out.println(temp);
             res.addAll(temp);
         }
 
@@ -50,13 +50,43 @@ public class Subsets {
         return res;
     }
 
+    public List<List<Integer>> subsetsRec(int[] nums) {
+        if (nums == null)
+            return null;
+        Arrays.sort(nums);
+        return helper(nums, nums.length-1);
+    }
+
+    public List<List<Integer>> helper(int[] nums, int n){
+        if (n == -1 ){
+            List<List<Integer>> res = new ArrayList<>();
+            List<Integer> empty = new ArrayList<>();
+            res.add(empty);
+            return res;
+        }
+
+        List<List<Integer>> res = helper(nums, n-1);
+        int size = res.size();
+        for (int i=0; i<size; i++){
+            List<Integer> element = new ArrayList<>(res.get(i));
+            element.add(nums[n]);
+            res.add(element);
+        }
+
+        return res;
+    }
+
+
+
     public Subsets() {}
 
     public static void main (String[] args) {
-        int[] nums = {1, 0, 3};
+        int[] nums = {1, 2, 3};
         Subsets a = new Subsets();
         List<List<Integer>> subsets = a.subsets(nums);
+        List<List<Integer>> subsets1 = a.subsetsRec(nums);
 
-        System.out.println(subsets.toString());
+        System.out.println(subsets);
+        System.out.println(subsets1);
     }
 }
